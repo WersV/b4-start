@@ -1,1 +1,1 @@
-# Simple animation for button
+# Make text bigger or smaller on hover over buttons
