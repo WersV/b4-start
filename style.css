@@ -10,6 +10,7 @@ button {
   padding: 10px 20px;
   font-size: 20px;
   background-color: transparent;
+  overflow: hidden;
 }
 
 button::before {
@@ -17,10 +18,15 @@ button::before {
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
   width: 0; 
   height: 0; 
   border-top: 22px solid transparent;
   border-bottom: 22px solid transparent;
   border-left: 15px solid black;
+  transition: .3s;
+}
+
+button:hover::before {
+  left: 0;
 }
